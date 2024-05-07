@@ -1,0 +1,21 @@
+public class ss {
+ public static Decimal binaryToDecimal(String binary) {
+        Decimal dec = 0;
+        Integer power = binary.length() - 1;
+        
+        for(Integer i = 0; i < binary.length(); i++) {
+            if(binary.substring(i, i+1) == '1') {
+                dec += Math.pow(2, power);
+            }
+            power--;
+        }
+        
+        return dec;
+    }
+
+}
+ varcha code
+
+excuation karnasathi cha code
+Decimal result = ss.binaryToDecimal('1011');
+System.debug('Decimal result: ' + result);
